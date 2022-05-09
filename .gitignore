@@ -112,5 +112,8 @@ mono_crash.*
 # XR Plugin Management 
 /[Aa]ssets/XR/
 
+# Oculus Integration  
+/[Aa]ssets/Oculus/
+
 # TextMesh Pro
 /[Aa]ssets/TextMesh Pro/
