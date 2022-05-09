@@ -27,6 +27,7 @@ public class Draw : MonoBehaviour
             // create clone of loght billboard prefab and move the cloned object under target parent (Drawing) object
             GameObject billboard = Instantiate(paint, currentPos, Quaternion.identity, TargetParent.transform);
             billboard.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+            billboard.tag = "Drawing";
         }
     }
 
