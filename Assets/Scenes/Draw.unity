@@ -1663,7 +1663,7 @@ PrefabInstance:
     - target: {fileID: 2568946665719251854, guid: 8bdd451919f46a94ba6d151b6d0cdffd,
         type: 3}
       propertyPath: MoveSpeed
-      value: 0.0003
+      value: 0.0005
       objectReference: {fileID: 0}
     - target: {fileID: 2568946665719251854, guid: 8bdd451919f46a94ba6d151b6d0cdffd,
         type: 3}
@@ -1860,6 +1860,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ec72a3a105768f746b556a8dfdae61a8, type: 2}
+    - target: {fileID: 9043774015251506715, guid: 8bdd451919f46a94ba6d151b6d0cdffd,
+        type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043774015251506715, guid: 8bdd451919f46a94ba6d151b6d0cdffd,
+        type: 3}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9101763540981274649, guid: 8bdd451919f46a94ba6d151b6d0cdffd,
         type: 3}
       propertyPath: onManipulationEnded.m_PersistentCalls.m_Calls.Array.size
