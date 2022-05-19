@@ -1714,8 +1714,8 @@ Transform:
   - {fileID: 712222069}
   - {fileID: 1153703167}
   - {fileID: 596336225}
-  - {fileID: 4538656051266049}
   - {fileID: 6293782216503574481}
+  - {fileID: 4538656051266049}
   - {fileID: 356692572}
   m_Father: {fileID: 1751021285}
   m_RootOrder: 2
@@ -6545,7 +6545,7 @@ Transform:
   - {fileID: 1467507565}
   - {fileID: 1999492017}
   m_Father: {fileID: 478027015}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &43992525758221278
 MonoBehaviour:
@@ -10829,7 +10829,7 @@ Transform:
   - {fileID: 2318876984479159294}
   - {fileID: 1480009587}
   m_Father: {fileID: 478027015}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &6293782216535250330
 MeshRenderer:

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Drawing
+  - Demo
+  - OtherUI
   layers:
   - Default
   - TransparentFX
