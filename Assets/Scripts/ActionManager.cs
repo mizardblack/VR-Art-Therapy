@@ -112,11 +112,11 @@ public class ActionManager : MonoBehaviour
         // set "toggle button" position and scale
         GameObject button = GameObject.Find("ToggleButton");
         Debug.Log(button);
-        button.transform.localPosition = new Vector3(-0.209000006f, -0.312000006f, 0.136000007f);
+        button.transform.localPosition = new Vector3(-0.209000006f, -0.326f, 0.136000007f);
         button.transform.localScale = new Vector3(3f, 3f, 3f);
         // set "slider" position and scale
         GameObject slider = GameObject.Find("PinchSliderColorHue");
-        slider.transform.localPosition = new Vector3(-0.0850000009f, -0.282999992f, 0.101000004f);
+        slider.transform.localPosition = new Vector3(-0.0850000009f, -0.283f, 0.1189995f);
         slider.transform.localScale = new Vector3(1f, 1f, 1f);
         // set "joystick" position and scale
         GameObject joystick = GameObject.Find("JoystickPrefab (Scale)");
@@ -129,7 +129,7 @@ public class ActionManager : MonoBehaviour
         joystickBase.transform.localScale = new Vector3(3.52501631f, 0.962074459f, 7f);
         // set "round button" position and scale
         button = GameObject.Find("ClearCanvasButton");
-        button.transform.localPosition = new Vector3(0.383f, -0.310000002f, 0.128999993f);
+        button.transform.localPosition = new Vector3(0.383f, -0.317f, 0.128999993f);
         button.transform.localScale = new Vector3(2f, 2f, 2f);
 
         GameObject[] demos = GameObject.FindGameObjectsWithTag("Demo");
