@@ -173,13 +173,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a33aa7eb795c8408ba365c819215ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 0}
+  targetObject: {fileID: 1410772421}
   debugText: {fileID: 1568521389}
   joystickVisual: {fileID: 2114026602}
   grabberVisual: {fileID: 1166324041}
   showGrabberVisual: 1
   ReboundSpeed: 5
-  SensitivityLeftRight: 3
+  SensitivityLeftRight: 5
   SensitivityForwardBack: 6
   mode: 1
   MoveSpeed: 0.001
@@ -2410,7 +2410,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &649108442
 Transform:
   m_ObjectHideFlags: 0
@@ -2424,7 +2424,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1191222782}
-  - {fileID: 894874462}
   m_Father: {fileID: 1751021285}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2870,12 +2869,12 @@ GameObject:
   - component: {fileID: 894874464}
   - component: {fileID: 894874463}
   m_Layer: 0
-  m_Name: Draw_0
+  m_Name: DrawDemo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &894874462
 Transform:
   m_ObjectHideFlags: 0
@@ -2884,11 +2883,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894874461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0.047, y: -0.114999995, z: 0.164}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 649108442}
+  m_Father: {fileID: 1410772422}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &894874463
@@ -3061,7 +3060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1153703167
 Transform:
   m_ObjectHideFlags: 0
@@ -3163,7 +3162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handType: -1
   proximityType: 3
-  constraintOnMovement: 2
+  constraintOnMovement: 6
   useLocalSpaceForConstraint: 0
 --- !u!114 &1166324046
 MonoBehaviour:
@@ -3320,7 +3319,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1301757384}
         m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
-        m_MethodName: ToPhase4
+        m_MethodName: ToPhase5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3548,7 +3547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1222763849
 Transform:
   m_ObjectHideFlags: 0
@@ -3819,12 +3818,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phase: 0
   targets:
+  - {fileID: 1663793261}
   - {fileID: 356692571}
   - {fileID: 7687361971405368935}
   - {fileID: 7307063429635112351}
   - {fileID: 1166324041}
   - {fileID: 6293782216352396976}
   levels:
+  - {fileID: 894874461}
   - {fileID: 1222763848}
   - {fileID: 7687361970700935655}
   - {fileID: 712222068}
@@ -4026,6 +4027,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1663793269}
+  - {fileID: 894874462}
   m_Father: {fileID: 1751021285}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5840,19 +5842,6 @@ MonoBehaviour:
   onManipulationStarted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 72d90092d0f1a734eb1cfcf71b8fa2e4,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1663793274}
         m_TargetAssemblyTypeName: Draw, Assembly-CSharp
         m_MethodName: Draw_Start
@@ -5865,25 +5854,48 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onManipulationEnded:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: 1301757384}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: RecordPreviousPos
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: ec33d8a6027c1574390812966f8aef94,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onManipulationEnded:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 1663793274}
         m_TargetAssemblyTypeName: Draw, Assembly-CSharp
         m_MethodName: Draw_End
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1301757384}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: RecordCurrentPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1301757384}
+        m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
+        m_MethodName: ToPhase1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7196,7 +7208,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1301757384}
         m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
-        m_MethodName: ToPhase2
+        m_MethodName: ToPhase3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7648,7 +7660,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1301757384}
         m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
-        m_MethodName: ToPhase1
+        m_MethodName: ToPhase2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8334,7 +8346,7 @@ MonoBehaviour:
         m_CallState: 1
       - m_Target: {fileID: 1301757384}
         m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
-        m_MethodName: ToPhase5
+        m_MethodName: ToPhase6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10420,7 +10432,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1301757384}
         m_TargetAssemblyTypeName: ActionManager, Assembly-CSharp
-        m_MethodName: ToPhase3
+        m_MethodName: ToPhase4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
