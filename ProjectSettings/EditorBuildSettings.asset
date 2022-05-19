@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Therapy Center.unity
     guid: 631ebed8ff9894811a473b0714f01a53
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Draw.unity
     guid: b07cc52d692f1476d80909f6ff989d75
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: c1758727e64404cad90400aefd6e5869
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 5adf16821dc274213a80cd02d570867f,
       type: 2}
