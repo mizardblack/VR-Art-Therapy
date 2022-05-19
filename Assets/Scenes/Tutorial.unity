@@ -15500,7 +15500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DarkSpace: {fileID: 2100000, guid: e0e00444c4c6746efb0bbeedbb9700cd, type: 2}
-  BlueSky: {fileID: 2100000, guid: e82d1077562de4360bd05bdf25888138, type: 2}
+  BlueSky: {fileID: 2100000, guid: 59573b088aaea0442bf29e0a0e9d1339, type: 2}
 --- !u!4 &8618723778943550621
 Transform:
   m_ObjectHideFlags: 0
