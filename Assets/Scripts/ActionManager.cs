@@ -146,19 +146,64 @@ public class ActionManager : MonoBehaviour
             GameObject joystickBase = GameObject.Find("Base (Scale)");
             joystickBase.transform.localPosition = new Vector3(0f, -2.20000005f, -1.76999998f);
             joystickBase.transform.localScale = new Vector3(3.52501631f, 0.962074459f, 7f);
-            // set "round button" position and scale
+            // set "clear button" position and scale
             button = GameObject.Find("ClearCanvasButton");
             button.transform.localPosition = new Vector3(0.383f, -0.317f, 0.128999993f);
             button.transform.localScale = new Vector3(2f, 2f, 2f);
+            UI[9].SetActive(true); // UI
 
-            GameObject[] demos = GameObject.FindGameObjectsWithTag("Demo");
-            foreach (GameObject demo in demos)
-            {
-                demo.SetActive(false);
-            }
+            // GameObject[] demos = GameObject.FindGameObjectsWithTag("Demo");
+            // foreach (GameObject demo in demos)
+            // {
+            //     demo.SetActive(false);
+            // }
 
             HideAllDemo();
         }
+    }
+    public void Restart()
+    {
+        phase = 0;
+
+        // set "joystick base" position and scale
+        GameObject joystickBase = GameObject.Find("Base (Scale)");
+        joystickBase.transform.localPosition = new Vector3(0f, -2.20000005f, -0.0199999996f);
+        joystickBase.transform.localScale = new Vector3(3.52501631f, 0.962074459f, 3.52501607f);
+
+        HideAllDemo();
+        HideAllUI();
+
+        demos[0].SetActive(true);
+
+        // set "handles" position and scale
+        GameObject handle = GameObject.Find("Handle (1)");
+        handle.transform.localPosition = new Vector3(-0.225f, handle.transform.localPosition.y, handle.transform.localPosition.z);
+        handle = GameObject.Find("Handle (2)");
+        handle.transform.localPosition = new Vector3(0.213f, handle.transform.localPosition.y, handle.transform.localPosition.z);
+        handle.transform.localScale = new Vector3(4f, 1.5f, 4f);
+        // set "tray" scale
+        GameObject tray = GameObject.Find("Tray");
+        tray.transform.localScale = new Vector3(0.495049506f, 0.300000012f, 0.00999999885f);
+
+        // set "toggle button" position and scale
+        UI[0].transform.localPosition = new Vector3(0.0689999983f, -0.314999998f, 0.0799999982f);
+        UI[0].transform.localScale = new Vector3(4f, 4f, 4f);
+
+        // set "slider" position and scale
+        UI[1].transform.localPosition = new Vector3(0.0170000009f, -0.36500001f, 0.101000004f);
+        UI[1].transform.localScale = new Vector3(2f, 2f, 2f);
+
+        // set "joystick" position and scale
+        UI[6].transform.localPosition = new Vector3(-0.301999986f, 0.158999994f, 0.0610000007f);
+        UI[6].transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
+        UI[7].SetActive(false); // UI
+        GameObject joystick = GameObject.Find("JoystickContainer");
+        joystick.transform.localPosition = new Vector3(0.21570003f, -0.254000008f, 0.0350000001f);
+
+        // set "clear button" position and scale
+        UI[8].transform.localPosition = new Vector3(0.0719999969f, -0.305000007f, 0.128999993f);
+        UI[8].transform.localScale = new Vector3(3f, 3f, 3f);
+        UI[9].SetActive(false); // UI
 
     }
 
