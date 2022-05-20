@@ -20,6 +20,9 @@ public class ActionManager : MonoBehaviour
     {
         GameObject tool = GameObject.Find("Tool");
         tool.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+
+        phase = 5;
+        ToPhase6();
     }
 
     // Update is called once per frame
